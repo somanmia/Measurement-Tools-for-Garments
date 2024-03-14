@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E12263"
+    android:layout_height="60dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+ android:layout_centerVertical="true"
+android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:layout_height="wrap_content"
+    >
+       <ImageView
+        android:id="@+id/backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:src="@drawable/backicon"
+        />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/backicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEASUREMENT TOOLS"
+            android:layout_marginStart="10dp"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/menubaricon"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_menu_24"
+        />
+</RelativeLayout>
+</RelativeLayout>

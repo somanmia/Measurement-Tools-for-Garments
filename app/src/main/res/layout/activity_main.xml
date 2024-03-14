@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+<include layout="@layout/toolbarlayout"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:layout_marginTop="30dp"
+    android:paddingBottom="20dp"
+    android:weightSum="2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MM Width লিখুন"
+
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="এখানে লিখুন।"
+            android:layout_marginTop="7dp"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mmwidthid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MM Height লিখুন"
+
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="এখানে লিখুন।"
+            android:layout_marginTop="7dp"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mmheightid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!---second part start-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SYN % Width লিখুন"
+
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="এখানে লিখুন।"
+                android:layout_marginTop="7dp"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/synwidthid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SYN % Height লিখুন"
+
+                android:textColor="#000000"
+                android:textSize="16sp"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="এখানে লিখুন।"
+                android:layout_marginTop="7dp"
+                style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/synheightid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:gravity="center"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+      android:paddingBottom="20dp"
+
+    android:weightSum="2"
+    android:orientation="horizontal">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resultbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D13168"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginRight="5dp"
+        android:textSize="18sp"
+        android:text="GET RESULT"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetbtn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:textColor="#fff"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="CLEAR ME"/>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ফাইনাল মেজারমেন্ট নিচে লক্ষ্য করুন।"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/fmmwidth"
+                    android:layout_width="0dp"
+
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn2"
+                    android:gravity="center"
+
+                    android:text=""
+                    android:textColor="#E91E63"
+                    android:textSize="58sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+
+                    android:text=""
+
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+            <!--==================== Final Measurement display for height==========-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/fmmheight"
+                    android:layout_width="0dp"
+
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+
+                    android:text=""
+                    android:textColor="#3F51B5"
+                    android:textSize="58sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/htitle"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+
+                    android:text=""
+
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
